@@ -1,0 +1,1 @@
+'https://api.tokenql.com/v1/graphql/' --data-raw '{"query":"query MyQuery { Evmos_Mainnet_ERC20{name symbol } }","variables":null,"operationName":"MyQuery"}'
