@@ -45,44 +45,6 @@ For Mainnet:
 yarn build-mainnet
 ```
 
-## Running the tests
-
-1. Run `transaction-history-service`
-
-```
-git clone https://github.com/harmony-one/multisig-react.git
-cd safe-transaction-service
-git checkout develop
-docker-compose build
-# it comes enabled by default in docker-compose
-sudo service postgresql stop
-docker-compose up -d
-```
-
-Check that the service is running at https://localhost:8000
-
-2. Migrate Safe Contracts:
-
-```
-git clone https://github.com/harmony-one/multisig-contracts.git
-cd safe-contracts
-yarn
-npx truffle migrate
-```
-
-3. Migrate Token Contracts for the tests:
-   Inside `safe-react` directory
-
-```
-npx truffle migrate
-```
-
-4. Run the tests:
-
-```
-yarn test
-```
-
 ### Break down into end to end tests
 
 Explain what these tests test and why
@@ -103,9 +65,6 @@ Give an example
 
 Add additional notes about how to deploy this on a live system
 
-## Configuring the app for running on different networks
-
-[Please check the network configuration documentation](./docs/networks.md)
 
 ## Contributing
 
